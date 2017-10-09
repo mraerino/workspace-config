@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ "$2,$3" = "merge," ]; then
+  sed -i.back "1s/^/:twisted_rightwards_arrows: /" "$1"
+fi

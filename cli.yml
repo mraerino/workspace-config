@@ -2,3 +2,4 @@
 
 - hosts: cli
   roles:
+    - git

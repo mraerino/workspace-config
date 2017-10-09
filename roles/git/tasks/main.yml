@@ -1,0 +1,14 @@
+---
+
+- name: Setup global gitignore
+  copy: src=files/gitignore_global dest=~/.gitignore_global
+
+- name: Setup git hooks
+  copy: src=files/git_hooks/ dest=~/.git_hooks/
+
+- name: Configure global git scope
+  git_config:
+    name: "{{ item.key }}"
+    scope: global
+    value: "{{ item.value }}"
+  with_dict: "{{ git_config.global }}"
