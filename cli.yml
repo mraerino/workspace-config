@@ -2,6 +2,6 @@
 
 - hosts: cli
   roles:
-    - git
-    - shell
-    - hacknow
+    - { role: git, tags: ['git'] }
+    - { role: shell, tags: ['shell'] }
+    - { role: hacknow, tags: ['utils'] }
