@@ -3,3 +3,6 @@
 
 # Keep inventory private
 inventory
+
+# Keep vault pass private
+.vault_pass
