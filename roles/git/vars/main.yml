@@ -5,8 +5,8 @@ git_config:
     user.name: Marcus Weiner
     user.email: marcus.weiner@gmail.com
     core.autocrlf: input
-    core.excludesfile: /Users/marcus/.gitignore_global
-    core.hooksPath: ~/.git_hooks
+    core.excludesfile: "{{ '~/.gitignore_global' | expanduser }}"
+    core.hooksPath: "{{ '~/.git_hooks' | expanduser }}"
     push.default: current
     color.ui: true
     pull.rebase: true
