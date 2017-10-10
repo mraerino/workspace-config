@@ -14,3 +14,13 @@
 
 - name: Include zsh config dir
   copy: src=files/zshrc.local dest=~/.zshrc.local
+
+- name: Detect shell path
+  shell: which zsh
+  register: shell_bin
+  check_mode: no
+  changed_when: false
+
+- name: Set zsh as default login shell
+  user: name={{ ansible_user }} shell={{ shell_bin.stdout }}
+  become: True
