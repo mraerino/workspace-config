@@ -1,0 +1,16 @@
+---
+
+- name: Apply grml zsh config
+  get_url: url=https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc dest=~/.zshrc
+
+- name: Create zsh config dir
+  file: path=~/.zshrc.d/ state=directory
+
+- name: Configure shell aliases
+  copy: src=files/aliases dest=~/.zshrc.d/aliases
+
+- name: Configure environment vars
+  template: src=templates/env.j2 dest=~/.zshrc.d/env
+
+- name: Include zsh config dir
+  copy: src=files/zshrc.local dest=~/.zshrc.local

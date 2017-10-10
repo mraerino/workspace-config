@@ -1,0 +1,6 @@
+---
+
+shell_env:
+  PATH: $PATH:~/Library/Android/sdk/tools/bin/
+  ANDROID_HOME: ~/Library/Android/sdk
+  ANDROID_SDK_ROOT: $ANDROID_HOME

@@ -1,0 +1,2 @@
+alias catc='highlight -O ansi'
+alias insecssh='ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -o "PreferredAuthentications=keyboard-interactive"'
