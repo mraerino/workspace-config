@@ -2,3 +2,7 @@
 
 shell_env:
   PATH: $PATH
+
+shell_aliases:
+  catc: 'highlight -O ansi'
+  insecssh: 'ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=/dev/null" -o "PreferredAuthentications=keyboard-interactive"'

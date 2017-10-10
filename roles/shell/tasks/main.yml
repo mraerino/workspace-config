@@ -6,11 +6,11 @@
 - name: Create zsh config dir
   file: path=~/.zshrc.d/ state=directory
 
-- name: Configure shell aliases
-  copy: src=files/aliases dest=~/.zshrc.d/aliases
-
-- name: Configure environment vars
-  template: src=templates/env.j2 dest=~/.zshrc.d/env
+- name: Configure shell aspects
+  template: src=templates/{{ item }}.j2 dest=~/.zshrc.d/{{ item }}
+  with_items:
+    - aliases
+    - env
 
 - name: Include zsh config dir
   copy: src=files/zshrc.local dest=~/.zshrc.local
