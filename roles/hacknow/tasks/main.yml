@@ -1,0 +1,9 @@
+---
+
+- name: Install hacknow
+  npm:
+    name: hacknow
+    global: yes
+
+- name: Configure shell function
+  copy: src=files/shell.conf dest=~/.zshrc.d/hacknow
