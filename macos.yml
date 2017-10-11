@@ -2,3 +2,4 @@
 
 - hosts: macos
   roles:
+    - { role: geerlingguy.homebrew, tags: ['brew'] }

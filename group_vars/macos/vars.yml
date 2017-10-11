@@ -4,3 +4,93 @@ shell_env:
   PATH: $PATH:~/Library/Android/sdk/tools/bin/
   ANDROID_HOME: ~/Library/Android/sdk
   ANDROID_SDK_ROOT: $ANDROID_HOME
+
+homebrew_use_brewfile: false
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+
+homebrew_installed_packages:
+  - ansible
+  - aria2
+  - asciinema
+  - awscli
+  - ffmbc
+  - git-lfs
+  - gnupg
+  - gti
+  - highlight
+  - hugo
+  - imagemagick
+  - ipcalc
+  - iperf3
+  - iproute2mac
+  - mosh
+  - mosquitto
+  - mtr
+  - nmap
+  - node
+  - p7zip
+  - packer
+  - pdf2htmlex
+  - pv
+  - pwgen
+  - python
+  - python3
+  - qemu
+  - ruby
+  - rust
+  - speedtest-cli
+  - ssh-copy-id
+  - terraform
+  - trash
+  - vagrant-completion
+  - watch
+  - wget
+  - wireshark
+  - zsh
+  - https://github.com/dche/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb # decklink sdk
+  - name: https://github.com/dche/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb # ffmpeg with decklink support
+    install_options: --with-ffplay --with-decklink
+
+homebrew_cask_apps:
+  - android-sdk
+  - android-studio
+  - arduino
+  - atom
+  - betterzipql
+  - bonjour-browser
+  - casparcg-client
+  - chrome-remote-desktop-host
+  - controlplane
+  - docker
+  - google-cloud-sdk
+  - filezilla
+  - firefox
+  - franz
+  - gimp
+  - google-backup-and-sync
+  - google-chrome
+  - iina
+  - jetbrains-toolbox
+  - obs
+  - postman
+  - qlcolorcode
+  - qlimagesize
+  - qlmarkdown
+  - qlstephen
+  - quicklook-csv
+  - sequel-pro
+  - sketch
+  - slack
+  - spectacle
+  - spotify
+  - teamviewer
+  - unifi-controller
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - visual-studio-code
+  - vlc
+  - webpquicklook
