@@ -52,6 +52,10 @@ defaults_domains:
       type: int
   com.apple.TimeMachine:
     - DoNotOfferNewDisksForBackup: True
+  com.apple.driver.AppleBluetoothMultitouch.trackpad:
+    - TrackpadRightClick: True
+  com.apple.driver.AppleBluetoothMultitouch.mouse:
+    - MouseButtonMode: TwoButton
   NSGlobalDomain:
     - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
