@@ -13,3 +13,6 @@
   command: pmset -c {{ item.key }} {{ item.value }}
   with_dict: "{{ energy_settings.charger }}"
   become: True
+
+- name: Show Library folder in home dir
+  command: chflags nohidden ~/Library
