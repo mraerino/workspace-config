@@ -58,6 +58,9 @@ defaults_domains:
     - MouseButtonMode: TwoButton
   com.apple.mail:
     - DisableInlineAttachmentViewing: true
+  com.apple.alf:
+    - globalstate: 1
+      type: int
   NSGlobalDomain:
     - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
