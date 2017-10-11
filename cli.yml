@@ -4,4 +4,5 @@
   roles:
     - { role: git, tags: ['git'] }
     - { role: shell, tags: ['shell'] }
+    - { role: npm, tags: ['packages'] }
     - { role: hacknow, tags: ['utils'] }

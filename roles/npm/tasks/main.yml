@@ -1,0 +1,10 @@
+---
+
+- include_tasks: tasks/prepare_linux.yml
+  when: ansible_system == 'Linux'
+
+- name: Install global npm packages
+  npm:
+    name: "{{ item }}"
+    global: yes
+  with_list: "{{ npm_packages }}"

@@ -1,0 +1,20 @@
+---
+
+npm_packages_group:
+  - bower
+  - firebase-bolt
+  - firebase-tools
+  - gulp
+  - gulp.plugin.zsh
+  - gzip-size-cli
+  - handlebars
+  - http-server
+  - netlify-cli
+  - now
+  - polymer-cli
+  - serverless
+  - web-component-tester
+  - webpack
+  - yarn
+
+npm_packages: "{{ npm_packages_group + npm_packages_host|default([]) }}"

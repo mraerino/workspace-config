@@ -1,0 +1,18 @@
+---
+
+- name: Create global package dir
+  file: path=~/.npm-packages/ state=directory
+
+- name: Configure npm global prefix
+  lineinfile:
+    path: ~/.npmrc
+    line: "prefix=${HOME}/.npm-packages"
+    create: yes
+
+- name: Configure path for executables
+  blockinfile:
+    path: ~/.zshrc.d/npm-path
+    content: |
+      NPM_PACKAGES="${HOME}/.npm-packages"
+      PATH="$PATH:$NPM_PACKAGES/bin"
+    create: yes
