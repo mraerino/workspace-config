@@ -4,9 +4,10 @@
   osx_defaults:
     domain: "{{ domain }}"
     key: "{{ key }}"
-    value: "{{ item[key] }}"
-    type: "{{ item.type | default('string' if item[key] is string else 'bool') }}"
+    value: "{{ value }}"
+    type: "{{ item.type | default('string' if value is string else 'bool') }}"
     state: present
   vars:
-    key: "{{ (item|list)[0] }}"
+    key: "{{ item.key|default((item|list)[0]) }}"
+    value: "{{ item.value|default(item[key]) }}"
   with_list: "{{ defaults_domains[domain] }}"

@@ -2,23 +2,23 @@
 
 defaults_domains:
   com.apple.finder:
-    - AppleShowAllFiles: 1
-    - CreateDesktop: 0
+    - AppleShowAllFiles: true
+    - CreateDesktop: false
     - FXPreferredViewStyle: clmv
     - NewWindowTarget: PfHm
     - NewWindowTargetPath: "file://{{ '~/' | expanduser }}"
-    - ShowPathbar: 1
-    - ShowPreviewPane: 0
-    - ShowRecentTags: 0
-    - ShowSidebar: 1
-    - ShowStatusBar: 1
-    - ShowTabView: 0
-    - SidebarDevicesSectionDisclosedState: 1
-    - SidebarPlacesSectionDisclosedState: 1
-    - SidebarSharedSectionDisclosedState: 1
-    - QLEnableTextSelection: 1
+    - ShowPathbar: true
+    - ShowPreviewPane: false
+    - ShowRecentTags: false
+    - ShowSidebar: true
+    - ShowStatusBar: true
+    - ShowTabView: false
+    - SidebarDevicesSectionDisclosedState: true
+    - SidebarPlacesSectionDisclosedState: true
+    - SidebarSharedSectionDisclosedState: true
+    - QLEnableTextSelection: true
   com.apple.screensaver:
-    - askForPassword: 1
+    - askForPassword: true
     - askForPasswordDelay: 0
       type: float
   com.apple.screencapture:
@@ -31,10 +31,10 @@ defaults_domains:
   com.apple.menuextra.clock:
     - DateFormat: "d. MMM  HH:mm:ss"
   com.apple.Siri:
-    - StatusMenuVisible: 1
+    - StatusMenuVisible: false
   com.if.Amphetamine:
     - "Show Dock Icon": 0
       type: int
   NSGlobalDomain:
-    - AppleShowAllExtensions: 1
+    - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
