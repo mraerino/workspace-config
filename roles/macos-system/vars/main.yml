@@ -50,6 +50,8 @@ defaults_domains:
   com.if.Amphetamine:
     - "Show Dock Icon": 0
       type: int
+  com.apple.TimeMachine:
+    - DoNotOfferNewDisksForBackup: True
   NSGlobalDomain:
     - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
