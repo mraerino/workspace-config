@@ -94,3 +94,18 @@ homebrew_cask_apps:
   - visual-studio-code
   - vlc
   - webpquicklook
+
+mas_signin_dialog: yes
+mas_email: "{{ vault_mas_email }}"
+mas_installed_apps:
+  - { id: 937984704, name: "Amphetamine (3.0.2)" }
+  - { id: 909566003, name: "iHex (2.3)" }
+  - { id: 409183694, name: "Keynote (7.3)" }
+  - { id: 540348655, name: "Monosnap (3.4.2)" }
+  - { id: 409203825, name: "Numbers (4.3)" }
+  - { id: 409201541, name: "Pages (6.3)" }
+  - { id: 1241445112, name: "PeakHour 4 (4.0.5)" }
+  - { id: 803453959, name: "Slack (2.8.1)" }
+  - { id: 1284863847, name: "Unsplash Wallpapers (1.0)" }
+  - { id: 494803304, name: "WiFi Explorer (2.3.2)" }
+  - { id: 497799835, name: "Xcode (8.3.3)" }
