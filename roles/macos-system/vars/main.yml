@@ -56,6 +56,8 @@ defaults_domains:
     - TrackpadRightClick: True
   com.apple.driver.AppleBluetoothMultitouch.mouse:
     - MouseButtonMode: TwoButton
+  com.apple.mail:
+    - DisableInlineAttachmentViewing: true
   NSGlobalDomain:
     - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
