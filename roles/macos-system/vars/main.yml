@@ -17,6 +17,13 @@ defaults_domains:
     - SidebarPlacesSectionDisclosedState: true
     - SidebarSharedSectionDisclosedState: true
     - QLEnableTextSelection: true
+  com.apple.dock:
+    - key: tilesize
+      value: 40
+      type: float
+    - mru-spaces: false
+    - workspaces-auto-swoosh: true
+    - mcx-disabled: true
   com.apple.screensaver:
     - askForPassword: true
     - askForPasswordDelay: 0
@@ -38,3 +45,5 @@ defaults_domains:
   NSGlobalDomain:
     - AppleShowAllExtensions: true
     - AppleInterfaceStyle: Dark
+    - NSNavPanelExpandedStateForSaveMode: true
+    - NSNavPanelExpandedStateForSaveMode2: true
