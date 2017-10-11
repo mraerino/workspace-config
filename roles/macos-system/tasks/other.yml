@@ -1,0 +1,15 @@
+---
+
+- name: Disable local Time Machine snapshots
+  command: tmutil disablelocal
+  become: True
+
+- name: Apply energy settings for battery power
+  command: pmset -b {{ item.key }} {{ item.value }}
+  with_dict: "{{ energy_settings.battery }}"
+  become: True
+
+- name: Apply energy settings for charger power
+  command: pmset -c {{ item.key }} {{ item.value }}
+  with_dict: "{{ energy_settings.charger }}"
+  become: True

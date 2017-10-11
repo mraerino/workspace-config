@@ -47,3 +47,40 @@ defaults_domains:
     - AppleInterfaceStyle: Dark
     - NSNavPanelExpandedStateForSaveMode: true
     - NSNavPanelExpandedStateForSaveMode2: true
+
+energy_settings:
+  battery:
+    lidwake: 1
+    autopoweroff: 1
+    autopoweroffdelay: 28800
+    standbydelay: 10800
+    standby: 1
+    ttyskeepawake: 1
+    hibernatemode: 3
+    powernap: 0
+    gpuswitch: 2
+    displaysleep: 3
+    sleep: 1
+    acwake: 0
+    halfdim: 1
+    lessbright: 0
+    disksleep: 10
+    sms: 0
+  charger:
+    lidwake: 1
+    autopoweroff: 1
+    autopoweroffdelay: 28800
+    standbydelay: 10800
+    standby: 1
+    ttyskeepawake: 1
+    hibernatemode: 3
+    powernap: 1
+    gpuswitch: 2
+    displaysleep: 60
+    womp: 1
+    networkoversleep: 0
+    sleep: 60
+    acwake: 0
+    halfdim: 1
+    disksleep: 10
+    sms: 0
