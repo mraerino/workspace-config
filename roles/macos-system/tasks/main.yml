@@ -1,0 +1,6 @@
+---
+
+- include_tasks: tasks/defaults_single.yml
+  with_items: "{{ defaults_domains | list }}"
+  loop_control:
+    loop_var: domain
