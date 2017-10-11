@@ -57,6 +57,8 @@ defaults_domains:
     - AppleInterfaceStyle: Dark
     - NSNavPanelExpandedStateForSaveMode: true
     - NSNavPanelExpandedStateForSaveMode2: true
+    - AppleKeyboardUIMode: 3
+      type: int
 
 energy_settings:
   battery:
