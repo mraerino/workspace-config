@@ -39,6 +39,14 @@ defaults_domains:
     - DateFormat: "d. MMM  HH:mm:ss"
   com.apple.Siri:
     - StatusMenuVisible: false
+  com.apple.SoftwareUpdate:
+    - AutomaticDownload: True
+    - ConfigDataInstall: True
+    - CriticalUpdateInstall: True
+    - ScheduleFrequency: 1
+      type: int
+  com.apple.commerce:
+    - AutoUpdate: True
   com.if.Amphetamine:
     - "Show Dock Icon": 0
       type: int
