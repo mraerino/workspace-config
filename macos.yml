@@ -5,3 +5,4 @@
     - { role: geerlingguy.homebrew, tags: ['brew'] }
     - { role: geerlingguy.mas, tags: ['mas'] }
     - { role: macos-system, tags: ['system'] }
+    - { role: terminal, tags: ['terminal'] }

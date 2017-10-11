@@ -1,0 +1,18 @@
+---
+
+- name: Set Terminal profile
+  osx_defaults:
+    domain: com.apple.Terminal
+    key: "Default Window Settings"
+    value: "SolarizedDark-mraerino"
+  register: theme_change
+
+- name: Import Terminal profile
+  shell: open {{ role_path }}/files/SolarizedDark-mraerino.terminal
+  when: theme_change.changed
+
+- name: Configure Terminal
+  osx_defaults:
+    domain: com.apple.Terminal
+    key: Shell
+    value: ""
