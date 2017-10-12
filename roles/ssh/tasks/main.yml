@@ -1,0 +1,4 @@
+---
+
+- name: Configure ssh client
+  template: src=templates/config.j2 dest=~/.ssh/config

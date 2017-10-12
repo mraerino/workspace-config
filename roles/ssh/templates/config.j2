@@ -1,0 +1,10 @@
+ServerAliveInterval 120
+TCPKeepAlive no
+{% if ansible_system == "Darwin" %}
+# macOS keychain
+UseKeychain yes
+AddKeysToAgent yes
+{% endif %}
+
+Host ix*.freifunk-duesseldorf.de
+	User mraerino
