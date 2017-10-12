@@ -72,8 +72,10 @@ homebrew_cask_apps:
   - gimp
   - google-backup-and-sync
   - google-chrome
+  - hazel
   - iina
   - jetbrains-toolbox
+  - nextcloud
   - obs
   - postman
   - qlcolorcode
