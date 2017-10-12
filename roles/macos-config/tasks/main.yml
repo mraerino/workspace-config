@@ -1,0 +1,6 @@
+---
+
+- name: Configure Franz messenger
+  copy:
+    src: files/franz-services.json
+    dest: "~/Library/Application Support/Franz/settings/services.json"
