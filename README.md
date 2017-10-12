@@ -10,15 +10,26 @@ This is an Ansible-based repository enabling me to setup my workspace machines f
 
 ## Usage
 
+### Preparations (macOS)
+
+Run this on a blank macOS install to get up and running
+
+```bash
+xcode-select --install # Install macOS CLI utils
+sudo pip install ansible # Install Ansible
+git clone https://github.com/mraerino/workspace-config
+cd workspace-config
+```
+
+### Execute playbook
+
 First, create an [`inventory`](http://docs.ansible.com/ansible/latest/intro_inventory.html) file with your machines.
 Then run this:
 
 ```bash
-ansible-galaxy install -r requirements.yml
+ansible-galaxy install -r requirements.yml # Install role dependencies
 ansible-playbook -i inventory site.yml
 ```
-
-*Notice: You obviously need to have [Ansible](https://www.ansible.com/) installed*
 
 ### Inventory
 
