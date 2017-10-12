@@ -14,6 +14,7 @@ First, create an [`inventory`](http://docs.ansible.com/ansible/latest/intro_inve
 Then run this:
 
 ```bash
+ansible-galaxy install -r requirements.yml
 ansible-playbook -i inventory site.yml
 ```
 
