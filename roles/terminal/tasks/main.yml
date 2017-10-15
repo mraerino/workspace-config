@@ -1,15 +1,23 @@
 ---
 
-- name: Set Terminal profile
-  osx_defaults:
-    domain: com.apple.Terminal
-    key: "Default Window Settings"
-    value: "SolarizedDark-mraerino"
-  register: theme_change
+- name: Check terminal profile exists
+  command: /usr/libexec/PlistBuddy -c "Print :'Window Settings':'SolarizedDark-mraerino'" ~/Library/Preferences/com.apple.Terminal.plist
+  register: theme_exists
+  failed_when: theme_exists.rc > 1
+  changed_when: false
 
 - name: Import Terminal profile
   shell: open "{{ role_path }}/files/SolarizedDark-mraerino.terminal"
-  when: theme_change.changed
+  when: theme_exists.rc == 1
+
+- name: Set Terminal profile
+  osx_defaults:
+    domain: com.apple.Terminal
+    key: "{{ item }}"
+    value: "SolarizedDark-mraerino"
+  with_items:
+    - "Startup Window Settings"
+    - "Default Window Settings"
 
 - name: Configure Terminal
   osx_defaults:
