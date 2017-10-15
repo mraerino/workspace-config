@@ -11,6 +11,7 @@
   with_items:
     - aliases
     - env
+    - localbin
 
 - name: Include zsh config dir
   copy: src=files/zshrc.local dest=~/.zshrc.local

@@ -1,0 +1,5 @@
+{% if ansible_system == "Darwin" %}
+if [[ ! ":$PATH:" == *":/usr/local/bin:"* ]]; then
+    export PATH="/usr/local/bin:$PATH"
+fi
+{% endif %}
