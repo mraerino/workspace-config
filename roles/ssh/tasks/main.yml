@@ -1,4 +1,7 @@
 ---
 
+- name: Ensure ssh config directory exists
+  file: path=~/.ssh state=directory
+
 - name: Configure ssh client
   template: src=templates/config.j2 dest=~/.ssh/config
