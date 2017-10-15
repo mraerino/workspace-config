@@ -7,3 +7,4 @@
     - { role: macos-system, tags: ['system'] }
     - { role: macos-config, tags: ['config'] }
     - { role: terminal, tags: ['terminal'] }
+    - { role: fubarhouse.macdock, tags: ['dock'] }
