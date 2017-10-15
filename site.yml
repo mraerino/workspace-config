@@ -1,5 +1,5 @@
 ---
 
-- include: cli.yml
 - include: macos.yml
 - include: linux.yml
+- include: cli.yml
