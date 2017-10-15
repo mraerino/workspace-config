@@ -1,5 +1,8 @@
 ---
 
+- name: Create Franz Settings directory
+  file: path="~/Library/Application Support/Franz/settings" state=directory
+
 - name: Configure Franz messenger
   copy:
     src: files/franz-services.json
