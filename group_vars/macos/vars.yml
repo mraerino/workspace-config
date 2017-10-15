@@ -52,7 +52,9 @@ homebrew_installed_packages:
   - zsh
   - https://github.com/dche/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb # decklink sdk
   - name: https://github.com/dche/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb # ffmpeg with decklink support
-    install_options: --with-ffplay --with-decklink
+    install_options:
+      - with-ffplay
+      - with-decklink
 
 homebrew_cask_apps:
   - android-sdk
