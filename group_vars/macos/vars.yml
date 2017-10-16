@@ -162,3 +162,5 @@ dockitems_enabled:
   - name: System Preferences
     path: "/Applications/System Preferences.app"
     pos: 11
+
+gravatar_hash: b5f974ed569a407b11774ec747819c02

@@ -1,5 +1,10 @@
 ---
 
+- name: Fetch profile picture from gravatar
+  get_url:
+    url: https://secure.gravatar.com/avatar/{{ gravatar_hash }}.jpg?size=512
+    dest: "{{ '~/Pictures/profilepic.jpg' | expanduser }}"
+
 - name: Create Franz Settings directory
   file: path="~/Library/Application Support/Franz/settings" state=directory
 
