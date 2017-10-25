@@ -4,6 +4,7 @@
   roles:
     - { role: git, tags: ['git'] }
     - { role: shell, tags: ['shell'] }
+    - { role: hosts, tags: ['hostfile'] }
     - { role: ssh, tags: ['ssh'] }
     - { role: npm, tags: ['packages'] }
     - { role: hacknow, tags: ['utils'] }

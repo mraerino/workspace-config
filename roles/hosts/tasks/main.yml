@@ -1,0 +1,8 @@
+---
+
+- name: Install host file extensions
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ item }}"
+  with_items: "{{ hosts_entries }}"
+  become: yes
