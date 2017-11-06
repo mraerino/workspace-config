@@ -13,6 +13,7 @@ npm_packages_group:
   - netlify-cli
   - now
   - polymer-cli
+  - polymer-modulizer
   - serverless
   - web-component-tester
   - webpack
