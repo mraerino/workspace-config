@@ -1,6 +1,7 @@
 ---
 
 npm_packages_group:
+  - babel-cli
   - bower
   - firebase-bolt
   - firebase-tools
