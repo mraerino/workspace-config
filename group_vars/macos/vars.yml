@@ -10,6 +10,7 @@ homebrew_use_brewfile: false
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - heroku/brew
 
 homebrew_installed_packages:
   - ansible
@@ -20,6 +21,7 @@ homebrew_installed_packages:
   - git-lfs
   - gnupg
   - gti
+  - heroku
   - highlight
   - hugo
   - imagemagick
